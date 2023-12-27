@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="slick/slick.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
 </head>
 <body>
     <nav>
@@ -51,87 +52,7 @@
         </div>
     </nav>
 
-    <div class="header-whoweare">
-        <h1>Who we are</h1>
-    </div>
-
-    <div class="body-whoweare">
-        <div class="about">
-            <div class="big-card">
-                <div class="big-card-img">
-                    <img src="img/img.jpg" alt="">
-                </div>
-                <div class="big-card-header">
-                    <span>Intro</span> video about company
-                </div>
-                <div class="big-card-content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam vitae amet, sequi ea saepe numquam! Suscipit obcaecati quos minus, facilis a, aperiam earum nam facere asperiores consequuntur placeat, ullam tempora?
-                    <br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem sunt neque fuga omnis minima quos maiores sapiente reprehenderit sed?
-                </div>
-            </div>
-            <div class="big-card">
-                <div class="big-card-img">
-                    <img src="img/img.jpg" alt="">
-                </div>
-                <div class="big-card-header">
-                    <span>Intro</span> video about company
-                </div>
-                <div class="big-card-content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam vitae amet, sequi ea saepe numquam! Suscipit obcaecati quos minus, facilis a, aperiam earum nam facere asperiores consequuntur placeat, ullam tempora?
-                    <br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem sunt neque fuga omnis minima quos maiores sapiente reprehenderit sed?
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="our-team">
-        <div class="our-team-header">
-            <h2><span>Our </span> Team</h2>
-        </div>
-        <div class="cards">
-            <div class="card">
-                <div class="card-img">
-                    <img src="img/img.jpg" alt="">
-                </div>
-                <div class="card-header card-item" style="font-size: 20px; font-weight: 700; margin-bottom: 5px;">
-                    John Doe
-                </div>
-                <div class="card-content cart-item">
-                    <div class="position" style="font-size: 14px; font-style: italic; margin-bottom: 10px;">Project Manager</div>
-                    Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="img/img.jpg" alt="">
-                </div>
-                <div class="card-header card-item" style="font-size: 20px; font-weight: 700; margin-bottom: 5px;">
-                    John Doe
-                </div>
-                <div class="card-content cart-item">
-                    <div class="position" style="font-size: 14px; font-style: italic; margin-bottom: 10px;">Project Manager</div>
-                    Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="img/img.jpg" alt="">
-                </div>
-                <div class="card-header card-item" style="font-size: 20px; font-weight: 700; margin-bottom: 5px;">
-                    John Doe
-                </div>
-                <div class="card-content cart-item">
-                    <div class="position" style="font-size: 14px; font-style: italic; margin-bottom: 10px;">Project Manager</div>
-                    Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
+   
     <footer>
         <div class="footer">
             <div class="footer-item footer-item-1">
@@ -198,8 +119,19 @@
         </div>
     </footer>
 
+
     <script src="slick/slick.min.js"></script>
     <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slick').slick({
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+
         $('.slider').slick({
             infinite: true,
             slidesToShow: 4,
@@ -209,5 +141,7 @@
             autoplaySpeed: 1000,
         });
       </script>
+
+    
 </body>
 </html>
