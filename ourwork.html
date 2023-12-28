@@ -14,14 +14,14 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     
     <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script> 
-    
-    <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css'> 
+    <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css'>
+
     <script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script> 
     <link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css'>
 
 
     <!-- Slick Slider -->
-    <link rel="stylesheet" href="slick/slick.css">
+    <!-- <link rel="stylesheet" href="slick/slick.css"> -->
 
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
@@ -51,6 +51,24 @@
             </div>
         </div>
     </nav>
+
+    <div class="header-ourwork">
+        <h1>Projects</h1>
+    </div>
+
+    <div class="body-ourwork">
+        <div id="gallery-ourwork" style="display: none;">
+            <img alt="Image 1" src="img/img.jpg" data-image="img/img.jpg">
+			<img alt="Image 2" src="img/img.jpg" data-image="img/img.jpg">
+            <img alt="Image 3" src="img/img.jpg" data-image="img/img.jpg">
+			<img alt="Image 4" src="img/img.jpg" data-image="img/img.jpg">
+            <img alt="Image 5" src="img/img.jpg" data-image="img/img.jpg">
+			<img alt="Image 6" src="img/img.jpg" data-image="img/img.jpg">
+            <img alt="Image 7" src="img/img.jpg" data-image="img/img.jpg">
+			<img alt="Image 8" src="img/img.jpg" data-image="img/img.jpg">
+			<img alt="Image 9" src="img/img.jpg" data-image="img/img.jpg">
+        </div>
+    </div>
 
    
     <footer>
@@ -120,28 +138,21 @@
     </footer>
 
 
-    <script src="slick/slick.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('.slick').slick({
-                arrows: false,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 3000,
-            });
-        });
+        jQuery(document).ready(function(){ 
+        	jQuery("#gallery-ourwork").unitegallery({
+                tiles_type:"justified",
+                tiles_justified_space_between: 10,
+                tile_enable_image_effect:true,
+	            tile_image_effect_reverse:true,
+	            tile_image_effect_type: "blur",
+                tile_enable_textpanel:true,
+	            // tile_textpanel_title_text_align: "center",
+            }); 
+        }); 
+    </script>
 
-        $('.slider').slick({
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 1000,
-        });
-      </script>
-
+    <script src="slick/slick.min.js"></script>
     
 </body>
 </html>

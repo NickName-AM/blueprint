@@ -327,7 +327,7 @@ footer{
 }
 
 // Who we are
-.header-whoweare, .header-services{
+.header-whoweare, .header-services, .header-ourwork{
     background-color: var(--white-2);
     padding: 40px 0;
     border-top: solid 1px #e9e9e9;
@@ -397,9 +397,13 @@ footer{
 }
 
 
-// Services
+// Services, Our work
 
-.body-services{
+.body-services, .body-ourwork{
     width: var(--width);
     margin: auto auto;
+}
+
+.body-ourwork{
+    padding: 40px 0;
 }
